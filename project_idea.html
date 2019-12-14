@@ -107,9 +107,81 @@ table, th, td {
 						<table border="0" cellspacing="0" cellpadding="10">
 							<tr>
 								<td style="vertical-align:top" align="left"><h3>Project Idea</h3></td>
+								<td rowspan="12"><img src="images/GoogleHome.gif"></td>
 							</tr>
 							<tr>	
-								<td valign="top"><b><i>Project Title</i></b></td>
+								<td valign="top"><b><i>Voice Powered Volunteering App</i></b></td>
+							</tr>
+							<tr>	
+								<td valign="top"><i>Overview</i></b></td>
+							</tr>
+							<tr>	
+								<td valign="top"><small>The project would be an implementation of a voice powered application that allows parties interested in volunteering to discover opportunities in their area. At present finding volunteering possibilities is made available through online searching and/or charity organisation and government websites, or enquiring in-person or over the phone to such organisations.  This project represents a substantial change by engaging the voice powered facilities currently available (such as smart Speakers) or voice integration found in many mobile operating systems today, thereby opening up the opportunities to an even broader audience.<br>
+								<br>The objective of the voice powered application is to expand the reach of volunteering opportunities to a larger audience, raising awareness and contributing to charity and not-for-profit organisations' missions.</small></td>
+							</tr>
+							<tr>	
+								<td valign="top"><i>Motivation</i></b></td>
+							</tr>
+							<tr>	
+								<td valign="top"><small>There are lots of not for profit and charity organisations that could benefit from an increase in contributions through volunteering.  There is a potential untapped market of able & willing members of the community that want to volunteer and contribute towards realising the organisations' mission.  The recent explosion of voice powered devices (Such as Amazon Alexa and Google Home appliances) has now opened doors for those unable to use traditional human-input mechanisms (such as keyboards, mice etc) to interact with IT systems, retrieve information and issue commands. </small></td>
+							</tr>
+							<tr>	
+								<td valign="top"><i>Description</i></b></td>
+							</tr>
+							<tr>	
+								<td valign="top"><small>At present finding volunteering possibilities is made available through online searching and/or charity organisation and government websites, or enquiring in-person or over the phone to such organisations. This project represents a substantial change by engaging the voice powered facilities currently available (such as smart Speakers) or voice integration found in many mobile operating systems today, thereby opening up the opportunities to an even broader audience.<br>
+								<br>Users of the application would need to be able to locate volunteering opportunities in their area by issuing voice commands to a smart speaker. The application would need to be able to advise them of such and allow further requests as necessary.<br>
+								<br>The application would decide on an appropriate response given the details of the location of the user (provided through the device itself). Based on this information the app would target the most appropriate information source (eg. Postcode 2000 would query the NSW Volunteering database, Postcode 4000 would interrogate the QLD Volunteering database and so on). <br>
+								<br>Once this had been determined, a query would be executed against the relevant volunteering opportunities databases (publicly available) and the results would be returned to the user.<br>
+								<br>The application would receive input provided through an interface provided by the Smart Speaker device (eg. A skill under Amazon Alexa) and send the received request to the central service platform.  Decisions would be formed based on the location, and the appropriate database is queried.  Results from the database are then returned back to the user audibly via the speaker of the device.  <br>
+								<br>Further responses could be given to the app to possibly permit the user of the speaker to subsequently apply for a volunteering position, although due to the processing of potentially identifiable information (PII) this should be taken up as a future consideration.<br>
+								<br>The service platform consists of a codebase that receives the query, makes decisions based on the content,  queries via an API or web scrape to the appropriate database, formats the results and returns them to the calling device.<br>
+								<br>This platform would have to be hosted somewhere that is centrally accessible to any user with Internet access.  I would suggest that this be hosted on a public cloud service such as Microsoft Azure, Amazon Web Services or Google Cloud for this purpose.  Since it is essentially facing a publicly untrusted network, sufficient security mechanisms would have to be implemented to ensure integrity and protection of the application.<br>
+								<br>Answers would be expected to be returned to the user within an acceptable timeframe (eg. 15 seconds).  The response would consist either of the answer to their original query or an advice that the request is unable to be fulfilled, either because of insufficient information/results or because the request was outside the boundaries of the application.
+.</small></td>
+							</tr>
+							<tr>	
+								<td valign="top"><i>Tools and Technologies</i></b></td>
+							</tr>
+							<tr>	
+								<td valign="top"><small>The following IT utilities and systems would be used for such an undertaking:<br>
+								<ul>
+								<li>GitHub - Source Code Repository</li>
+								<li>API.AI and/or Skill Builder - Programming language for Voice Powered Applications (Google Actions and/or Amazon Skills)</li>
+								<li>Google Home Mini Device or similar - For Testing and Execution of the App</li>
+								<li>Eclipse IDE - Used for developing the code for the App</li>
+								<li>Visual Paradigm - Used for UML Modelling for architectural design
+								
+								<li>Computing Device with Internet Access - Used to write the code and design the application</li>
+								</ul></small></td>
+							</tr>
+							<tr>	
+								<td valign="top"><i>Skills Required</i></td>
+							</tr>
+							<tr>	
+								<td valign="top"><small>In order to produce an app such as this the following skills would be utilised:<br>
+								<ol>
+									<li>Expertise in Programming Languages mentioned above</li>
+									<li>Basic understanding of Infrastructure, networking etc. to understand the communication layers required for the application</li>
+									<li>Access to a smart speaker to provide full end-to-end testing</li>
+									<li>Familiarity with the GitHub repositories, particularly around code managing, versioning and release management</li>
+								</ol>
+								<br>In terms of finding the skills - I believe this would be the most challenging with regard to the development side; voice applications are a relatively new technology and therefore the pool of talent would most likely be quite small.<br>
+								<br>RMIT units however give students the ability and know-how for the use of Source Code repositories such as Git and exposure to Infrastructure and IT Security arenas.<br>
+								<br>Hardware wise, smart speakers are gaining in popularity so I believe that a number of students would already have these devices at hand.
+									</small></td>
+							</tr>
+							<tr>	
+								<td valign="top"><i>Outcome</i></td>
+							</tr>
+							<tr>	
+								<td valign="top"><small>The final result would be an application that can be invoked through Amazon Alexa or Google Home (eg. &quot;Hey Google, tell me what volunteer positions are available for Oxfam&quot;)This would be an app to allow those seeking volunteering opportunities to find out afor bout offerings in their area.  This would allow those less able or unfamiliar with technology to be able to &quot;give-back&quot; to the community, such as the elderly or those who cannot use other forms of input (such as keyboards). Not-for-profit and charity organisations would strengthen through the increased exposure to a new talent pool and therefore the community as a whole would benefit.</small></td>
+							</tr>
+							<tr>	
+								<td valign="top"><i>Potential Challenges / Drawbacks</i></td>
+							</tr>
+							<tr>	
+								<td valign="top"><small>The biggest challenge a project such as this faces is the unfamiliarity with the languages and implementation of such a system.  The skillset of a project team needs to be sufficient in a number of areas in order to guarantee success.  In addition, verification of information with regard to compliance and accessing potentially sensitive information.  Therefore it is advised that a sufficient feasibility study be taken prior to this.  </small></td>
 							</tr>
 						</table>
 					</td>
